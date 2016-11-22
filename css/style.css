@@ -1,0 +1,248 @@
+/* ======================================================================================== */
+/* General styles */
+/* ======================================================================================== */
+
+	body{
+		background: #fafafa;
+		text-rendering: geometricPrecision; }
+
+	h1{
+		font-size: 6.4rem;
+		font-weight: 100;
+		margin-top:0;
+	}
+
+	h2{
+		font-size: 10.4rem;
+		font-weight: 100;
+		line-height: 10.5rem;
+	}
+
+	h3{
+		font-size: 3.2rem;
+		font-weight: 100;
+		letter-spacing: -1px;
+		margin-bottom: 2.3rem;
+	}
+
+	p{
+		font-size: 2.2rem;
+		font-weight: 100;
+		line-height: 3.2rem;
+	}
+
+	img{
+		max-width: 100%; }
+
+	.btn:focus{
+		outline:none; }
+
+
+	/* Special Classes */
+
+	.grey{
+		color: #666; }
+
+
+
+
+
+/* ======================================================================================== */
+/* Structure */
+/* ======================================================================================== */
+
+	section{
+		background-repeat: no-repeat; }
+
+	section:first-child{
+		overflow: hidden;
+	}
+
+
+	/* Hero Section */
+	
+	.hero{
+		background: url('../img/bg/hero-lg.jpg');
+		background-position: center center;
+		min-height: 1000px;
+	}
+
+	.description{
+		margin:0 auto 0 auto;
+		max-width: 60vw;
+		text-align: center;
+	}
+
+	.hero .description{
+		margin-top: 116vh;
+	}
+
+
+	/* Second Section */
+	
+	.second{
+		background: url('../img/bg/sports-lg.jpg');
+		background-attachment: fixed;
+	    background-position: center 0;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    max-height: 800px;
+	}
+	
+	.overlay{
+		background: rgba(51, 51, 51, 0.4);
+		max-height: 800px; 
+		padding-bottom: 5em;
+	}
+
+	.second .description{
+		color: #fafafa;
+		padding:50vh 1vw 0 1vw;
+	}
+
+
+	.features{
+	    display: inline-flex;
+	    justify-content: space-between;
+	    max-width: 44vw;
+	    width: 100%;
+	}
+
+	.features > div{
+		font-size: 1.6rem;
+	    font-weight: 100;
+	    margin-top:3em;
+	    max-width: 10%;
+	}
+		/* Icons */
+		.icon{
+			background-repeat: no-repeat;
+			display: block;
+			height: 40px;
+			margin:0 auto 1em auto;
+			width: 40px;
+		}
+
+		.gps{
+			background: url('../img/icons/gps.svg');
+		}
+		
+		.heart{
+			background: url('../img/icons/heart.svg');
+		}
+		
+		.water{
+			background: url('../img/icons/water.svg');
+		}
+		
+		.app{
+			background: url('../img/icons/app.svg');
+		}
+
+
+	section .description p{
+		font-size: 2.8rem;
+		font-weight: 100;
+		line-height: 3.6rem; }
+
+	
+	/* Collapse */
+
+	.well{
+		background: #fafafa;
+		border:none;
+		border-radius: 0;
+		box-shadow: none;
+		margin:0;
+	}
+
+	.learn-more{
+		margin:0 auto;
+		text-align: center;
+	}
+
+	.learn-more button{
+	    font-size: 1.6rem;
+	    font-weight: 100;
+	}
+
+
+
+	/* Third Section */
+
+	.third{
+		position: relative; }
+
+	.third .row{
+		margin-bottom: 7em; }
+	
+	.third img{
+		position: absolute;
+		right: 0;
+		top:-5em; }
+
+	.third p{
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 2.6rem;
+	}
+
+
+	/* Toggle Content */
+
+	.collapse-list{
+		position: absolute; 
+		top: -9999px; 
+		left: -9999px;
+	}
+
+	.active .collapse-list{
+		top:11em;
+		left: 0;
+		animation: toggle-content 2s; /* IE 10+, Fx 29+ */
+	}
+	
+	.toggle{
+		color: #6bf;
+		cursor: pointer;
+		font-size: 1.6rem;
+		font-weight: 100;
+		position: relative;
+		top:-4em;
+	}
+
+	.active .toggle{
+		animation: toggle-button 2s; /* IE 10+, Fx 29+ */
+		top:4em;
+	}
+
+
+
+
+/* ======================================================================================== */
+/* Animations */
+/* ======================================================================================== */
+
+	/* Toggle / Third Section */
+
+	@keyframes toggle-content {
+	  0%   { opacity: 0; }
+	  100% { opacity: 1; }
+	}
+
+	@keyframes toggle-button {
+	  0%   { top: -4em; }
+	  100% { top: 4em; }
+	}
+
+
+
+
+/* ======================================================================================== */
+/* Media Queries */
+/* ======================================================================================== */
+
+
+
+
+
